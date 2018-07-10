@@ -25,23 +25,53 @@
 	position:relative;
 }
 
-.picture-on-left {
+.picture-frame-on-left {
 	width:416px;
 	height:350px;
 	margin:0;
 	padding:0;
 	position:absolute;
-	background-color: rgba(255,255,255,0.75);
-	float:left;
+	background-color: rgba(255,255,255,0.65);
 }
 
-p {
+.text-on-right {
 	width:544;
 	height:auto;
-	margin: 0px 30px 0 450px;
+	margin: 15px 50px 0 460px;
 	position:absolute;
-	padding: 30px;
+	padding: 0;
 	float:right;
 	color: #fff;
+	font-family: Bradley Hand ITC;
+}
+
+#AP-classes {
+	width:960px;
+	height:350px;
+	background-color: #FFD1D1;
+	position:relative;
+	margin:0;
+	padding:0;
+	display:block;
+	overflow:hidden;
+}
+
+.picture-frame-on-right {
+	width:416px;
+	height:350px;
+	margin-left:544px;
+	padding:0;
+	position:absolute;
+	background-color: rgba(255,255,255,0.65);
+}
+
+.text-on-left {
+	width:544;
+	height:auto;
+	margin: 15px 460px 0 50px;
+	position:absolute;
+	padding: 0;
+	float:right;
+	color: #F06464;
 	font-family: Bradley Hand ITC;
 }
