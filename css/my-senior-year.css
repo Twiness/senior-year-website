@@ -75,3 +75,10 @@
 	color: #F06464;
 	font-family: Bradley Hand ITC;
 }
+
+#fresno {
+	width:960px;
+	height:350px;
+	background-color: #F9ACAC;
+	position:relative;
+}
