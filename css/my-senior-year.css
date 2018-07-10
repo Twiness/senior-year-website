@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#wrapper {
+	width:960px;
+	height:250px;
+	background-color: rgba(242,185,185,1.00);
+}
+
+#my-senior-year {
+	position:absolute;
+	padding: 0 0 0 0;
+	color: #fff;
+	margin: 60px 0 125px 215px;
+	font-family: Edwardian Script ITC;
+	font-size:110px;
+	font-weight: 200;
+	transform: scale(1.1,1);
+}
+
+#badminton {
+	width:960px;
+	height:350px;
+	background-color: #F9ACAC;
+	position:relative;
+}
+
+.picture-on-left {
+	width:416px;
+	height:350px;
+	margin:0;
+	padding:0;
+	position:absolute;
+	background-color: rgba(255,255,255,0.75);
+	float:left;
+}
+
+p {
+	width:544;
+	height:auto;
+	margin: 0px 30px 0 450px;
+	position:absolute;
+	padding: 30px;
+	float:right;
+	color: #fff;
+	font-family: Bradley Hand ITC;
+}
