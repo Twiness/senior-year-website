@@ -41,6 +41,67 @@
 	background-color: rgba(255,255,255,0.65);
 }
 
+#badminton-slide1 {
+	background-image: url(../media/in-game.jpg);
+	position:absolute;
+	width:320px;
+	height:260px;
+	margin: 35px auto 55px 48px;
+}
+#badminton-slide2 {
+	background-image: url(../media/back-hand.jpg);
+	position:absolute;
+	width:320px;
+	height:260px;
+	margin: 35px auto 55px 48px;
+}
+#badminton-slide3 {
+	background-image: url(../media/before-game.jpg);
+	position:absolute;
+	width:320px;
+	height:260px;
+	margin: 35px auto 55px 48px;
+}
+#badminton-slide4 {
+	background-image: url(../media/badminton-everyone.jpg);
+	position:absolute;
+	width:320px;
+	height:260px;
+	margin: 35px auto 55px 48px;
+}
+
+#fresno-slide1 {
+	background-image: url(../media/fresno-bridge.jpg);
+	position:absolute;
+	width:320px;
+	height:260px;
+	margin: 35px auto 55px 48px;
+}
+
+#fresno-slide2 {
+	background-image: url(../media/arbor.jpg);
+	position:absolute;
+	width:320px;
+	height:260px;
+	margin: 35px auto 55px 48px;
+}
+
+#fresno-slide3 {
+	background-image: url(../media/IMG_20180613_134441.jpg);
+	position:absolute;
+	width:195px;
+	height:260px;
+	margin: 35px auto 55px 110px;
+}
+
+#fresno-slide4 {
+	background-image: url(../media/underground-garden.jpg);
+	position:absolute;
+	width:195px;
+	height:260px;
+	margin: 35px auto 55px 110px;
+}
+
 .text-on-right {
 	width:544;
 	height:auto;
@@ -73,6 +134,21 @@
 	background-color: rgba(255,255,255,0.65);
 }
 
+#ap-slide1 {
+	background-image: url(../media/ap-physics-project.jpg);
+	position:absolute;
+	width:320px;
+	height:260px;
+	margin: 35px 0 55px 48px;
+}
+
+#ap-slide2 {
+	background-image: url(../media/launcher.jpg);
+	position:absolute;
+	width:320px;
+	height:260px;
+	margin: 35px 0 55px 48px;
+}
 .text-on-left {
 	width:544;
 	height:auto;
@@ -117,4 +193,41 @@
 #pink-houses {
 	position:absolute;
 	margin: 0 10px auto 600px;
+}
+
+.arrow {
+	cursor: pointer;
+	position:absolute;
+	top:42%;
+	width:0;
+	height:0;
+	border-style: solid;
+}
+
+.arrow-left {
+	border-width: 20px 30px 20px 0;
+	left:0px;
+	margin-left:8px;
+	border-color: transparent #F9ACAC transparent transparent;
+}
+
+.arrow-right {
+	border-width: 20px 0 20px 30px;
+	right:0px;
+	margin-right:8px;
+	border-color: transparent transparent transparent #F9ACAC;
+}
+
+.r-arrow-left {
+	border-width: 20px 30px 20px 0;
+	left:0px;
+	margin-left:8px;
+	border-color: transparent #FFD1D1 transparent transparent;
+}
+
+.r-arrow-right {
+	border-width: 20px 0 20px 30px;
+	right:0px;
+	margin-right:8px;
+	border-color: transparent transparent transparent #FFD1D1;
 }
