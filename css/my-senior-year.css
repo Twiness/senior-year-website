@@ -4,10 +4,7 @@
 * {
 	margin:auto;
 }
-.size {
-	width:960;
-	height:1400px;
-}
+
 #wrapper {
 	width:960px;
 	height:250px;
@@ -28,10 +25,14 @@
 #badminton {
 	width:960px;
 	height:350px;
-	background-color: #F9ACAC;
+	background-color: rgba(249,172,172,1.00);
 	position:relative;
 }
 
+#badminton-pic {
+	position:absolute;
+	margin:35px 48px;
+}
 .picture-frame-on-left {
 	width:416px;
 	height:350px;
@@ -39,67 +40,6 @@
 	padding:0;
 	position:absolute;
 	background-color: rgba(255,255,255,0.65);
-}
-
-#badminton-slide1 {
-	background-image: url(../media/in-game.jpg);
-	position:absolute;
-	width:320px;
-	height:260px;
-	margin: 35px auto 55px 48px;
-}
-#badminton-slide2 {
-	background-image: url(../media/back-hand.jpg);
-	position:absolute;
-	width:320px;
-	height:260px;
-	margin: 35px auto 55px 48px;
-}
-#badminton-slide3 {
-	background-image: url(../media/before-game.jpg);
-	position:absolute;
-	width:320px;
-	height:260px;
-	margin: 35px auto 55px 48px;
-}
-#badminton-slide4 {
-	background-image: url(../media/badminton-everyone.jpg);
-	position:absolute;
-	width:320px;
-	height:260px;
-	margin: 35px auto 55px 48px;
-}
-
-#fresno-slide1 {
-	background-image: url(../media/fresno-bridge.jpg);
-	position:absolute;
-	width:320px;
-	height:260px;
-	margin: 35px auto 55px 48px;
-}
-
-#fresno-slide2 {
-	background-image: url(../media/arbor.jpg);
-	position:absolute;
-	width:320px;
-	height:260px;
-	margin: 35px auto 55px 48px;
-}
-
-#fresno-slide3 {
-	background-image: url(../media/IMG_20180613_134441.jpg);
-	position:absolute;
-	width:195px;
-	height:260px;
-	margin: 35px auto 55px 110px;
-}
-
-#fresno-slide4 {
-	background-image: url(../media/underground-garden.jpg);
-	position:absolute;
-	width:195px;
-	height:260px;
-	margin: 35px auto 55px 110px;
 }
 
 .text-on-right {
@@ -134,21 +74,23 @@
 	background-color: rgba(255,255,255,0.65);
 }
 
-#ap-slide1 {
-	background-image: url(../media/ap-physics-project.jpg);
+video {
+	width:380px;
 	position:absolute;
-	width:320px;
-	height:260px;
-	margin: 35px 0 55px 48px;
+	margin:50px 20px;
 }
 
-#ap-slide2 {
-	background-image: url(../media/launcher.jpg);
+#video-caption{
+	color:#F9ACAC;
+	font-family: Bradley Hand ITC;
+	font-weight:bold;
+	font-size:15px;
+	padding:0;
+	margin-top:270px;
+	margin-left:20px;
 	position:absolute;
-	width:320px;
-	height:260px;
-	margin: 35px 0 55px 48px;
 }
+
 .text-on-left {
 	width:544;
 	height:auto;
@@ -175,6 +117,7 @@
 	display:block;
 	width:960px;
 	height:100px;
+	background-color: #fff;
 }
 
 #footer-paragraph {
@@ -195,39 +138,75 @@
 	margin: 0 10px auto 600px;
 }
 
-.arrow {
-	cursor: pointer;
+.bottom-slides{
+	display:none;
+	margin: 35px auto auto 48px;
+}
+
+.text {
+	color:#F9ACAC;
+	font-family: Bradley Hand ITC;
+	font-weight:bold;
+	font-size:15px;
+	padding:5px;
+	margin-top:-3px;
 	position:absolute;
-	top:42%;
-	width:0;
-	height:0;
-	border-style: solid;
 }
 
-.arrow-left {
-	border-width: 20px 30px 20px 0;
-	left:0px;
-	margin-left:8px;
-	border-color: transparent #F9ACAC transparent transparent;
+.prev {
+	color:#F9ACAC;
+	top:40%;
+	position:absolute;
+	left:10px;
+	font-weight:bold;
+	padding: 10px 10px;
+	font-size: 18px;
 }
 
-.arrow-right {
-	border-width: 20px 0 20px 30px;
-	right:0px;
-	margin-right:8px;
-	border-color: transparent transparent transparent #F9ACAC;
+.next {
+	color:#F9ACAC;
+	top:40%;
+	position:absolute;
+	right:10px;
+	font-weight:bold;
+	padding: 10px 10px;
+	font-size: 18px;
 }
 
-.r-arrow-left {
-	border-width: 20px 30px 20px 0;
-	left:0px;
-	margin-left:8px;
-	border-color: transparent #FFD1D1 transparent transparent;
+
+.prev:hover, .next:hover{
+	background: rgba(255,209,209,0.68);
+	cursor:pointer;
+	border-radius: 5px;
 }
 
-.r-arrow-right {
-	border-width: 20px 0 20px 30px;
-	right:0px;
-	margin-right:8px;
-	border-color: transparent transparent transparent #FFD1D1;
+.slide-dots {
+	text-align:right;
+	margin-right:48px;
+	margin-top:-22px;
 }
+
+.dots {
+	width: 6px;
+	height: 6px;
+	display: inline-block;
+	background: rgba(249,172,172,0.46);
+	padding: 3px;
+	border-radius: 6px;
+	cursor:pointer;
+}
+
+.fade {
+	animation-name:fade;
+	animation-duration:.8s;	
+}
+
+@keyframes fade{
+	from{opacity:0.1}
+	to{opacity:1}
+}
+.active,.dots:hover {
+	background:rgba(249,172,172,0.90);
+}
+/* please visit https://www.youtube.com/watch?v=7ZO2RTMNSAY to work on the js part, begin at 16:31 */
+

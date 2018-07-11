@@ -9,7 +9,6 @@
 </head>
   <body>
    <div class="clear"></div>
-   <div class="size">
     <header>
       <div id="wrapper">
       	<h1 id="my-senior-year">my senior year</h1>
@@ -18,43 +17,104 @@
     </header>
       <section id="badminton">
 		<div class="picture-frame-on-left">
-			<div class="arrow-left arrow"></div>
-				<div class="slider">
-					<div id="badminton-slide1"></div>
-					<div id="badminton-slide2"></div>
-					<div id="badminton-slide3"></div>
-					<div id="badminton-slide4"></div>
+				<div class="fade" id="badminton-pic">
+					<div><img src="media/badminton-everyone.jpg" width="320" height="260" alt="badminton seniors players altogether"/></div>
+					<div class="text">badminton seniors players altogether</div>
 				</div>
-			<div class="arrow-right arrow"></div>
-		</div>
+  		</div>
+   	
     	<div class="text-on-right">
     	<p>Behind the festive banquet and great achievement, it’s more about the effort and time that each of the players dedicated in for the team. Miles of running, numerous lunge walks and footworks, uncountable drills that had prepared each of players to exceed their limit, even if some are not awarded. Each of the players kept insist on conditioning and practicing for this sport, despite they are drenched in sweat or in a tired physical state. Looking back, as if the team just started yesterday, but today half of the team is graduating. Even though the seniors are leaving this team, we will still continue our journey with our best, like our underclassmen, “run until the birdies fall on the floor,” as our coach said.</p></div>
       </section>
       <section id="AP-classes">
         <div class="picture-frame-on-right">
-        	<div class="r-arrow-left arrow"></div>
-				<div class="slider">
-					<div id="ap-slide1"></div>
-					<div id="ap-slide2"></div>
-				</div>
-       		<div class="r-arrow-right arrow"></div>
+        	<div>
+        		<video controls>
+        			<source src="media/VID_20180531_224218_2 (1).mp4" type="video/mp4">
+        		</video>
+        		<p id="video-caption">Launch a wooden piece with projectile launcher</p>
+			</div>
+       	
         </div>
+       
+        
+       
 	    <div class="text-on-left"><p>Behind the festive banquet and great achievement, it’s more about the effort and time that each of the players dedicated in for the team. Miles of running, numerous lunge walks and footworks, uncountable drills that had prepared each of players to exceed their limit, even if some are not awarded. Each of the players kept insist on conditioning and practicing for this sport, despite they are drenched in sweat or in a tired physical state. Looking back, as if the team just started yesterday, but today half of the team is graduating. Even though the seniors are leaving this team, we will still continue our journey with our best, like our underclassmen, “run until the birdies fall on the floor,” as our coach said.</p></div>
       </section>
       <section id="fresno">
       	<div class="picture-frame-on-left">
-      		<div class="arrow-left arrow"></div>
-				<div class="slider">
-					<div id="fresno-slide1"></div>
-					<div id="fresno-slide2"></div>
-					<div id="fresno-slide3"></div>
-					<div id="fresno-slide4"></div>
+      		<div>
+				<div id="fresno-slide1" class="bottom-slides fade">
+					<div><img src="media/arbor.jpg" width="320" height="260" alt="arbor in the Japanese Garden"/></div>
+					<div class="text">Japanese Garden</div>
 				</div>
-			<div class="arrow-right arrow"></div>
+				<div class="bottom-slides fade">
+					<div><img src="media/fresno-bridge.jpg" width="320" height="260" alt="Bridge in the Japanese Garden"/></div>
+					<div class="text">Japanese Garden</div>
+				</div>
+				<div class="bottom-slides fade">
+					<div><img src="media/IMG_20180613_134441.jpg" width="320" height="260" alt="Entrance of the Forestiere Underground Gardens"/></div>
+					<div class="text">Forestiere Underground Gardens</div>
+				</div>
+				<div class="bottom-slides fade">
+					<div><img src="media/underground-garden.jpg" width="320" height="260" alt="Orange tree in the Forestiere Underground Gardens"/></div>
+					<div class="text">Forestiere Underground Gardens</div>
+				</div>
+				<a class="prev" onclick="bottomplusIndex(+1)">&#10094;</a>
+				<a class="next" onclick="bottomplusIndex(+1)">&#10095;</a>
+			</div>
+     		<br/>
+			<div class="slide-dots">
+				<span class="dots" onclick="currentSlide(1)"></span>
+				<span class="dots" onclick="currentSlide(2)"></span>
+				<span class="dots" onclick="currentSlide(3)"></span>
+				<span class="dots" onclick="currentSlide(4)"></span>
+		</div>
       	</div>
+      	<!--start to code with js here for third section of image slideshow -->
+  		
+  		<script type="text/javascript">
+		var slideIndex = 1;
+			
+		showImage(slideIndex);
+			
+		function bottomplusIndex(n) {
+			showImage(slideIndex += n);
+		}
+		
+		function currentSlide(n) {
+			showImage(slideIndex = n);
+		}
+					  
+		function showImage(n){
+			var slide = document.getElementsByClassName("bottom-slides");
+			var dots = document.getElementsByClassName("dots");
+			
+			if(n > slide.length) { slideIndex = 1};
+			if(n < 1) {slideIndex = slide.length};
+	
+			for (var i = 0; i < slide.length; i++) {
+		slide[i].style.display = "none";
+			};
+			
+			slide[slideIndex-1].style.display = "block";
+			
+			for (var i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace ("active","");
+			};
+
+			dots[slideIndex-1].className += " active ";
+			
+		}
+			
+		</script>
+   		<!-- finish third section of slideshow -->
+   		
     	<div class="text-on-right">
     	<p>Behind the festive banquet and great achievement, it’s more about the effort and time that each of the players dedicated in for the team. Miles of running, numerous lunge walks and footworks, uncountable drills that had prepared each of players to exceed their limit, even if some are not awarded. Each of the players kept insist on conditioning and practicing for this sport, despite they are drenched in sweat or in a tired physical state. Looking back, as if the team just started yesterday, but today half of the team is graduating. Even though the seniors are leaving this team, we will still continue our journey with our best, like our underclassmen, “run until the birdies fall on the floor,” as our coach said.</p></div>
-      </section>
+      </section> 
+      
+  		
     <footer>
     	<div id="footer">
 		<div><p>made with <a href="https://github.com/Twiness/senior-year-website"><img src="media/pink-heart.png" width="18" height="18" alt="a cute pink heart"/></a>
@@ -62,6 +122,5 @@
    		<div id="pink-houses"><img src="media/pink-houses.png" width="266" height="85" alt="pink houses"/></div>
    		</div>
     </footer>
-  </div>
   </body>
 </html>
