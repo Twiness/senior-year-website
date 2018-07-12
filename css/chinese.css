@@ -150,6 +150,12 @@ video {
 	position:relative;
 }
 
+.link {
+	text-decoration:underline;
+	font-style:italic;
+	color:#fff;
+}
+
 #footer {
 	position:relative;
 	margin:auto;
@@ -166,7 +172,7 @@ video {
 	color:#F9ACAC;
 	font-size:19px;
 	font-weight:600;
-	margin: 32px 20px auto 170px;
+	margin: 38px 20px auto 310px;
 	position:absolute;
 	width:400px;
 	font-family: 'sentyTEA';
@@ -174,7 +180,7 @@ video {
 
 #pink-houses {
 	position:absolute;
-	margin: auto 10px 0 600px;
+	margin: 10px 10px 0 600px;
 }
 
 .bottom-slides{
@@ -224,7 +230,7 @@ video {
 .slide-dots {
 	text-align:right;
 	margin-right:48px;
-	margin-top:272px;
+	margin-top:273px;
 }
 
 .dots {
@@ -252,7 +258,7 @@ video {
 
 #icon {
 	position:absolute;
-	margin: 30px auto auto 365px;
+	margin: 35px auto auto 150px;
 }
 
 #icon a img{
