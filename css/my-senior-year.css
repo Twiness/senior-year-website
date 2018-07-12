@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+	font-family: 'Bradley Hand ITC';
+	src:url('../font/BRADHITC.TTF') format('truetype');
+	font-weight:normal;
+	font-style: normal;
+}
+
 #wrapper {
 	width:960px;
 	height:250px;
