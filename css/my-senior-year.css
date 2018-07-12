@@ -5,6 +5,13 @@
 	margin:auto;
 }
 
+@font-face {
+  font-family: 'sentyTEA';
+  src:url('../font/SentyTEA.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #wrapper {
 	width:960px;
 	height:250px;
@@ -26,7 +33,7 @@
 	padding: 0 0 0 0;
 	color: #fff;
 	margin: 220px auto 10px 130px;
-	font-family: Bradley Hand ITC;
+	font-family: 'sentyTEA';
 	font-size:18px;
 	font-weight: 200;
 }
