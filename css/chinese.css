@@ -164,9 +164,9 @@ video {
 }
 #footer p {
 	color:#F9ACAC;
-	font-size:22px;
-	font-weight:550;
-	margin: 30px 20px auto 170px;
+	font-size:19px;
+	font-weight:600;
+	margin: 32px 20px auto 170px;
 	position:absolute;
 	width:400px;
 	font-family: 'sentyTEA';
@@ -174,12 +174,13 @@ video {
 
 #pink-houses {
 	position:absolute;
-	margin: 0 10px auto 600px;
+	margin: auto 10px 0 600px;
 }
 
 .bottom-slides{
 	display:none;
 	margin: 35px auto auto 48px;
+	position:absolute;
 }
 
 .text {
@@ -190,7 +191,7 @@ video {
 	padding:5px;
 	margin-top:-3px;
 	position:absolute;
-	letter-spacing:1px;
+	letter-spacing:0.5px;
 }
 
 .prev {
@@ -223,7 +224,7 @@ video {
 .slide-dots {
 	text-align:right;
 	margin-right:48px;
-	margin-top:-22px;
+	margin-top:272px;
 }
 
 .dots {
@@ -247,6 +248,15 @@ video {
 }
 .active,.dots:hover {
 	background:rgba(249,172,172,0.90);
+}
+
+#icon {
+	position:absolute;
+	margin: 30px auto auto 365px;
+}
+
+#icon a img{
+	padding:3px;
 }
 /* please visit https://www.youtube.com/watch?v=7ZO2RTMNSAY to work on the js part, begin at 16:31 */
 
