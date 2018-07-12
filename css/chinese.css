@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin:auto;
+}
+
+@font-face {
+  font-family: 'sentyTEA';
+  src:url('../font/SentyTEA.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#wrapper {
+	width:960px;
+	height:250px;
+	background-color: rgba(242,185,185,1.00);
+}
+
+#english {
+	position:absolute;
+	padding: 0 0 0 0;
+	color: #fff;
+	margin: 220px auto 10px 50px;
+	font-family: Bradley Hand ITC;
+	font-size:18px;
+	font-weight: 200;
+}
+
+#chinese {
+	position:absolute;
+	padding: 0 0 0 0;
+	color: #fff;
+	margin: 220px auto 10px 130px;
+	font-family: 'sentyTEA';
+	font-size:18px;
+	font-weight: 100;
+}
+#my-senior-year {
+	position:absolute;
+	padding: 0 0 0 0;
+	color: #fff;
+	margin: 90px auto 125px 295px;
+	font-family: 'sentyTEA';
+	font-size:80px;
+	font-weight: 100;
+	letter-spacing: 20px;
+}
+
+#badminton {
+	width:960px;
+	height:350px;
+	background-color: rgba(249,172,172,1.00);
+	position:relative;
+}
+
+#badminton-pic {
+	position:absolute;
+	margin:35px 48px;
+}
+.picture-frame-on-left {
+	width:416px;
+	height:350px;
+	margin:0;
+	padding:0;
+	position:absolute;
+	background-color: rgba(255,255,255,0.65);
+}
+
+.text-on-right {
+	width:544;
+	height:auto;
+	margin: 28px 40px 8px 460px;
+	position:absolute;
+	padding: 0;
+	float:right;
+	color: #fff;
+	font-family: Bradley Hand ITC;
+	font-size:18px;
+	line-height:1.3;
+}
+
+#AP-classes {
+	width:960px;
+	height:350px;
+	background-color: #FFD1D1;
+	position:relative;
+	padding:0;
+	display:block;
+	overflow:hidden;
+}
+
+.picture-frame-on-right {
+	width:416px;
+	height:350px;
+	margin-left:544px;
+	padding:0;
+	position:absolute;
+	background-color: rgba(255,255,255,0.65);
+}
+
+video {
+	width:380px;
+	position:absolute;
+	margin:50px 20px;
+}
+
+#video-caption{
+	color:#F9ACAC;
+	font-family: Bradley Hand ITC;
+	font-weight:bold;
+	font-size:15px;
+	padding:0;
+	margin-top:270px;
+	margin-left:20px;
+	position:absolute;
+}
+
+.text-on-left {
+	width:544;
+	height:auto;
+	margin:28px 460px 8px 40px;
+	position:absolute;
+	padding: 0;
+	float:right;
+	color: #F06464;
+	font-family: Bradley Hand ITC;
+	line-height:1.3;
+	font-size:18px;
+}
+
+#fresno {
+	width:960px;
+	height:350px;
+	background-color: #F9ACAC;
+	position:relative;
+}
+
+#footer {
+	position:relative;
+	margin:auto;
+	display:block;
+	width:960px;
+	height:100px;
+	background-color: #fff;
+}
+
+#footer-paragraph {
+	margin:auto;
+}
+#footer p {
+	color:#F9ACAC;
+	font-family:"Bradley Hand ITC";
+	font-size:22px;
+	font-weight:550;
+	margin: 30px 20px auto 170px;
+	position:absolute;
+	width:400px;
+}
+
+#pink-houses {
+	position:absolute;
+	margin: 0 10px auto 600px;
+}
+
+.bottom-slides{
+	display:none;
+	margin: 35px auto auto 48px;
+}
+
+.text {
+	color:#F9ACAC;
+	font-family: Bradley Hand ITC;
+	font-weight:bold;
+	font-size:15px;
+	padding:5px;
+	margin-top:-3px;
+	position:absolute;
+}
+
+.prev {
+	color:#F9ACAC;
+	top:40%;
+	position:absolute;
+	left:10px;
+	font-weight:bold;
+	padding: 10px 10px;
+	font-size: 18px;
+}
+
+.next {
+	color:#F9ACAC;
+	top:40%;
+	position:absolute;
+	right:10px;
+	font-weight:bold;
+	padding: 10px 10px;
+	font-size: 18px;
+}
+
+
+.prev:hover, .next:hover{
+	background: rgba(255,209,209,0.68);
+	cursor:pointer;
+	border-radius: 5px;
+}
+
+.slide-dots {
+	text-align:right;
+	margin-right:48px;
+	margin-top:-22px;
+}
+
+.dots {
+	width: 6px;
+	height: 6px;
+	display: inline-block;
+	background: rgba(249,172,172,0.46);
+	padding: 3px;
+	border-radius: 6px;
+	cursor:pointer;
+}
+
+.fade {
+	animation-name:fade;
+	animation-duration:.8s;	
+}
+
+@keyframes fade{
+	from{opacity:0.1}
+	to{opacity:1}
+}
+.active,.dots:hover {
+	background:rgba(249,172,172,0.90);
+}
+/* please visit https://www.youtube.com/watch?v=7ZO2RTMNSAY to work on the js part, begin at 16:31 */
+

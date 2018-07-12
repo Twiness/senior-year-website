@@ -11,6 +11,25 @@
 	background-color: rgba(242,185,185,1.00);
 }
 
+#english {
+	position:absolute;
+	padding: 0 0 0 0;
+	color: #fff;
+	margin: 220px auto 10px 50px;
+	font-family: Bradley Hand ITC;
+	font-size:18px;
+	font-weight: 200;
+}
+
+#chinese {
+	position:absolute;
+	padding: 0 0 0 0;
+	color: #fff;
+	margin: 220px auto 10px 130px;
+	font-family: Bradley Hand ITC;
+	font-size:18px;
+	font-weight: 200;
+}
 #my-senior-year {
 	position:absolute;
 	padding: 0 0 0 0;
