@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: Bradley Hand ITC;
+  src:url(' ../font/BRADHITC.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #wrapper {
 	width:960px;
 	height:250px;
@@ -22,9 +29,9 @@
 	position:absolute;
 	padding: 0 0 0 0;
 	color: #fff;
-	margin: 215px auto 10px 50px;
-	font-family: 'Patrick Hand SC', cursive;
-	font-size:19px;
+	margin: 220px auto 10px 50px;
+	font-family: Bradley Hand ITC;
+	font-size:18px;
 	font-weight: 200;
 }
 
@@ -41,11 +48,10 @@
 	position:absolute;
 	padding: 0 0 0 0;
 	color: #fff;
-	margin: 70px 0 125px 240px;
-	font-family: 'Patrick Hand SC', cursive;
-	font-size:80px;
-	font-weight:50;
-	transform: scale(1.1,1);
+	margin: 92px 0 125px 225px;
+	font-family: Bradley Hand ITC;
+	font-size:70px;
+	font-weight: 200;
 }
 
 #badminton {
@@ -76,9 +82,9 @@
 	padding: 0;
 	float:right;
 	color: #fff;
-	font-family: 'Patrick Hand SC', cursive;
-	font-size:20px;
-	line-height:1.1;
+	font-family: Bradley Hand ITC;
+	font-size:18px;
+	line-height:1.3;
 }
 
 #AP-classes {
@@ -108,7 +114,7 @@ video {
 
 #video-caption{
 	color:#F9ACAC;
-	font-family: 'Patrick Hand SC', cursive;
+	font-family: Bradley Hand ITC;
 	font-weight:bold;
 	font-size:16px;
 	padding:0;
@@ -125,9 +131,9 @@ video {
 	padding: 0;
 	float:right;
 	color: #F06464;
-	font-family: 'Patrick Hand SC', cursive;
-	line-height:1;
-	font-size:20px;
+	font-family: Bradley Hand ITC;
+	line-height:1.2;
+	font-size:18px;
 }
 
 #fresno {
@@ -145,9 +151,9 @@ video {
 	padding: 0;
 	float:right;
 	color: #fff;
-	font-family: 'Patrick Hand SC', cursive;
-	font-size:20px;
-	line-height:1.1;
+	font-family: Bradley Hand ITC;
+	font-size:18px;
+	line-height:1.3;
 }
 
 .link {
@@ -170,7 +176,7 @@ video {
 }
 #footer p {
 	color:#F9ACAC;
-	font-family:'Patrick Hand SC', cursive;
+	font-family:"Bradley Hand ITC";
 	font-size:20px;
 	font-weight:550;
 	margin: 38px 20px auto 290px;
@@ -191,7 +197,7 @@ video {
 
 .text {
 	color:#F9ACAC;
-	font-family: 'Patrick Hand SC', cursive;
+	font-family: Bradley Hand ITC;
 	font-weight:bold;
 	font-size:16px;
 	padding:5px;
